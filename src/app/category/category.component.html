@@ -1,1 +1,29 @@
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Id</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Position</th>
+      <th scope="col">Name</th>
+      <th scope="col">Link</th>
+      <th scope="col">LinkEncoded</th>
+      <th scope="col">Map</th>
+      <th scope="col">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let category of categories; let i=index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{category.Id}}</td>
+      <td>{{category.Quantity}}</td>
+      <td>{{category.Position}}</td>
+      <td>{{category.Name}}</td>
+      <td>{{category.Link}}</td>
+      <td>{{category.LinkEncoded}}</td>
+      <td>{{category.Map}}</td>
+      <td>{{category.Value}}</td>
+    </tr>
+  </tbody>
+</table>
 <p>category works!</p>

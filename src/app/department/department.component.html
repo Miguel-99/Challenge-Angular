@@ -1,4 +1,5 @@
-<table class="table">
+<button class="btn btn-primary mt-2" (click)="sortByQuantity()">Ordernar por Quantity</button>
+<table class="table table-bordered table-hover">
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
@@ -13,7 +14,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let department of departments; let i=index">
-      <th scope="row">{{i}}</th>
+      <th scope="row">{{i+1}}</th>
       <td>{{department.Quantity}}</td>
       <td>{{department.Position}}</td>
       <td>{{department.Name}}</td>

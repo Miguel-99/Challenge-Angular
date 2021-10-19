@@ -1,1 +1,27 @@
-<p>brand works!</p>
+<button class="btn btn-primary" (click)="sortByName()">Ordernar por Nombre</button>
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Position</th>
+      <th scope="col">Name</th>
+      <th scope="col">Link</th>
+      <th scope="col">LinkEncoded</th>
+      <th scope="col">Map</th>
+      <th scope="col">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let brand of brands; let i=index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{brand.Quantity}}</td>
+      <td>{{brand.Position}}</td>
+      <td>{{brand.Name}}</td>
+      <td>{{brand.Link}}</td>
+      <td>{{brand.LinkEncoded}}</td>
+      <td>{{brand.Map}}</td>
+      <td>{{brand.Value}}</td>
+    </tr>
+  </tbody>
+</table>

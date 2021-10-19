@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { IBrand } from '../models/Ibrand.interface';
 import { ApiService } from '../services/api.service';
@@ -9,12 +9,21 @@ import { ApiService } from '../services/api.service';
   styleUrls: ['./brand.component.css']
 })
 export class BrandComponent implements OnInit {
-  brand: IBrand;
+  @Input()
+  brands: IBrand[];
   constructor(private api: ApiService, private router: Router) {
     
    }
 
   ngOnInit(): void {
   }
-
+  sortByName(): void {
+    this.brands = this.brands.sort( (a, b) =>{
+      if (a.Name > b.Name)
+        return 1;
+      if (b.Name < b.Name)
+        return -1;
+      return 0;
+    })
+  }
 }

@@ -12,9 +12,6 @@ import { ApiService } from '../services/api.service';
 })
 export class DataComponent implements OnInit {
   data: Idata;
-  brands: IBrand;
-  deparments: IDepartment;
-  categories: ICategory;
   brandsVisible: boolean;
   departmentsVisible: boolean;
   categoriesVisible: boolean;
@@ -26,7 +23,10 @@ export class DataComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    this.api.getData().subscribe( data => this.data = data); 
+    this.api.getData().subscribe( data => {
+      this.data = data
+      console.log(data);
+    }); 
   }
   showDepartments(){
     this.departmentsVisible = !this.departmentsVisible;

@@ -14,4 +14,9 @@ export class DepartmentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sortByQuantity(): void {
+    this.departments = this.departments.sort( (a, b) => 
+      b.Quantity - a.Quantity
+    );
+  }
 }
