@@ -1,0 +1,26 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Position</th>
+      <th scope="col">Name</th>
+      <th scope="col">Link</th>
+      <th scope="col">LinkEncoded</th>
+      <th scope="col">Map</th>
+      <th scope="col">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let department of departments; let i=index">
+      <th scope="row">{{i}}</th>
+      <td>{{department.Quantity}}</td>
+      <td>{{department.Position}}</td>
+      <td>{{department.Name}}</td>
+      <td>{{department.Link}}</td>
+      <td>{{department.LinkEncoded}}</td>
+      <td>{{department.Map}}</td>
+      <td>{{department.Value}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,12 @@
+<button (click)=showDepartments()>Show/Hide Departamentos</button><br>
+<button (click)=showBrands()>Show/Hide Brands</button><br>
+<button (click)=showCategories()>Show/Hide Categories</button><br>
+<div *ngIf="departmentsVisible" class="container">
+    <app-department [departments]="data.Departments"></app-department>
+</div>
+<div *ngIf="brandsVisible">
+    <app-brand></app-brand>
+</div>
+<div *ngIf="categoriesVisible">
+    <app-category></app-category>
+</div>
