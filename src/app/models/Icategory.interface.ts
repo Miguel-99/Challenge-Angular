@@ -1,7 +1,7 @@
 export interface ICategory {
     Id: number;
     Quantity: number;
-    Position: number;
+    Position: number | null;
     Name: string;
     Link: string;
     LinkEncoded: string;
