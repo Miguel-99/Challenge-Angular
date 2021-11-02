@@ -1,27 +1,11 @@
-# Poc
+# Challenge Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Consumir la API https://arcordiezb2c.myvtex.com/api/catalog_system/pub/facets/search/_all?map=b
+2. Modelar los datos del resultado
+3. Mostrar la lista de Departments ordenada por Quantity de manera ascendente 
+4. Mostrar la lista de Brands ordenada por Name de manera descendente
+5. Armar el arbol de Categorias completo. Todos los niveles deben estar en orden ascendente por Name
+6. Encontrar las Categorias en todos los niveles que tienen menos de 7 en Quantity y agregarles (*) al Name
+7. Mostrar el arbol de categorias por consola. Cada nivel debe estar con una tabulacion superior al nivel anterior.
+8. Antes del punto 7: Agregar un hijo en las Categoria "Leche" y otro en "Carne de aves" con datos aleatorios
+9. Contar y mostrar por consola la cantidad de Categorias que no tienen hijos en cada nivel del arbol
